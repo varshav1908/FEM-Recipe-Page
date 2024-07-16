@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    background-color:hsl(30, 54%, 90%);
+    min-height: 100vh;
+    
+
+    
+}
+.container{
+    width: 700px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-family:Outfit, arial ;
+    font-size: 16px;
+   
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+.image img{
+    width: 92%;
+    margin: 28px auto;
+    vertical-align: middle;
+    display: block;
+    border-radius: 10px;
+}
+
+.recipe-description h1,
+.ingredients h2 ,
+.instructions-bar h2,
+.Nutrition-bar h2{
+    font-family:Young Serif,arial;
+    font-weight: 400;
+    color: hsl(14, 45%, 36%);
+   
+
+}
+.recipe-description h1{
+    color: hsl(24, 5%, 18%);
+    font-size: 35px;
+
+}
+.recipe-description p{
+    font-size: 16px;
+    padding: 15px 0;
+    
+}
+
+
+.preparation-time{
+    margin-bottom: 25px;
+    background-color:hsl(330, 100%, 98%) ;
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+    
+    
+}
+.preparation-time h3{
+    color:  hsl(332, 51%, 32%);
+    margin-bottom: 10px;
+
+}
+.preparation-time li::marker{
+    color: hsl(332, 51%, 32%);
+    font-size: 0.8rem;
+}
+.ingredients li::marker{
+    color:hsl(14, 45%, 36%);
+    font-size: 0.8rem;
+
+}
+
+
+
+.instructions-bar li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 700;
+    font-size: 0.9rem;
+
+}
+
+.preparation-time ul,
+
+.instructions-bar ol{
+    list-style-position: inside;
+    margin:auto 5px;
+    line-height: 28px;
+}
+.ingredients ul{
+    list-style-position: outside;
+    padding-left: 20px;
+    line-height: 28px;
+}
+.ingredients li{
+    padding-left: 20px;
+}
+
+.preparation-time ul span,
+.instructions-bar ol span{
+    color:hsl(30, 10%, 34%);
+    font-weight: 700;
+    margin-left: 10px;
+   
+}
+.instructions-bar{
+    margin: 20px 0;
+}
+
+.instructions-bar  li{
+    display: list-item;
+    text-indent: -1.7em; /* Negative indent to offset the padding */
+    padding-left: 1.5em; /* Space for the number */
+    line-height: 20px;
+    margin: 7px;
+    
+}
+.instructions-bar h2{
+    margin-bottom: 12px;
+}
+
+
+.ingredients h2{
+    margin-bottom: 15px;
+}
+.ingredients{
+    margin-bottom: 20px;
+}
+.Nutrition-bar{
+    margin-top: 20px;
+}
+.Nutrition-bar h2,p{
+    margin-bottom: 15px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+th, td {
+    border-top: 1px solid hsl(30, 18%, 87%); /* Add horizontal lines */
+    padding: 8px 20px;
+    text-align: left;
+}
+
+tr:first-child th, tr:first-child td {
+    border-top: none; /* Remove top border for the first row */
+}
+
+tr:last-child th, tr:last-child td {
+    border-bottom: none; /* Remove bottom border for the last row */
+}
+.Nutrition-bar span{
+    color:hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+hr{
+ 
+   
+    border:1px solid hsl(30, 18%, 87%);
+}
+
+@media only screen and (max-width: 375px){
+    .image img{
+        width: 100%;
+        margin:0;
+        max-height: 290px;
+        display: inherit;
+        border-radius: 0px;
+    }
+    .container{
+        border-radius: 0px;
+    }
+    
+}
